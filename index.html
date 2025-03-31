@@ -64,22 +64,23 @@
 
     <section class="stats">
         <div class="stat-card">
-            <h3>1,000+</h3>
+            <h3 data-target="1000">0</h3>
             <p>Visitors</p>
         </div>
         <div class="stat-card">
-            <h3>1,000+</h3>
+            <h3 data-target="1000">0</h3>
             <p>Downloads</p>
         </div>
         <div class="stat-card">
-            <h3>5,000+</h3>
+            <h3 data-target="5000">0</h3>
             <p>Total Books</p>
         </div>
         <div class="stat-card">
-            <h3>25K+</h3>
+            <h3 data-target="25000">0</h3>
             <p>Premium Members</p>
         </div>
     </section>
+    
     <div class="separation"></div>
     <footer>
         <div class="questions">Questions? Call 000-800-919-1743</div>
@@ -110,5 +111,30 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const stats = document.querySelectorAll(".stat-card h3");
+            const speed = 200; // Speed of counting
+    
+            stats.forEach(stat => {
+                const updateCount = () => {
+                    const target = +stat.getAttribute("data-target");
+                    const count = +stat.innerText;
+                    const increment = target / speed;
+    
+                    if (count < target) {
+                        stat.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        stat.innerText = target; // Ensure it stops exactly at target
+                    }
+                };
+                
+                updateCount();
+            });
+        });
+    </script>
+    
 </body>
 </html>

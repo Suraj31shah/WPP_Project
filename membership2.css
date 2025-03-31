@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f9fafb, #e5e7eb);
+}
+
+/* Header styles */
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #1e40af;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 30%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.nav-button {
+    background: linear-gradient(to right, #4f46e5, #4338ca);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    background: linear-gradient(to right, #4338ca, #312e81);
+}
+
+/* Membership Plans */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.box {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Membership Plan Colors */
+.one-month {
+    border-top: 6px solid #ff6b6b;
+}
+
+.three-month {
+    border-top: 6px solid #4CAF50;
+}
+
+.one-year {
+    border-top: 6px solid #2196F3;
+}
+
+/* Buy Now Button */
+.buy-button {
+    background: linear-gradient(to right, #ff6b6b, #e05252);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buy-button:hover {
+    background: linear-gradient(to right, #e05252, #b03535);
+    transform: scale(1.05);
+}
+
+/* Benefits Section */
+.benefits-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.benefit-icon {
+    font-size: 30px;
+    color: #ff6b6b;
+}
+
+/* Reviews Section */
+.reviews-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: #fbbf24;
+    font-size: 20px;
+}
+
+.reviewer {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #64748b;
+}
