@@ -1,0 +1,117 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #FF6F91, #FF9671);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0.8rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FFD3B6;
+}
+
+.cta-button {
+    background: #FF9671;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #FF6F91;
+    transform: scale(1.05);
+}
+
+.trending, .latest {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.trending h2, .latest h2 {
+    font-size: 2.5rem;
+    color: #FF6F91;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.membership {
+    padding: 4rem;
+    background: #FFF1F3;
+    border-radius: 12px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.stat-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #FFF1F3;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer a {
+    color: #FF6F91;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
