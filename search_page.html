@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Your Digital Library</title>
+    <link rel="stylesheet" href="search_style.css">
+    <script src="search_box.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VIDया</div>
+            <a href="#" class="nav-link" >Home</a>
+            <a href="#" class="nav-link">Browse</a>
+            <a href="#" class="nav-link">Membership</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Contact</a>
+                <a href="sign_in_index.html" class="nav-button">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="input-container">
+        <input type="email" placeholder="Email" class="input-field">
+        <button type="submit" class="submit-button">Subscribe</button>
+    </div>
+
+    <div class="categorybox">
+        <h id="category">CATEGORY</h>
+    </div>
+
+    <div class="book-detail-box">
+        <div class="header">
+            <!-- <h1>📚 Book Detail Box</h1> -->
+            <h class="headername">📚 Book Name</h>
+            <div class="tabs">
+                <button class="tab-button">DETAIL</button>
+                <button class="tab-button">AI REVIEW</button>
+                <button class="tab-button active">FEEDBACK</button>
+            </div>
+            <!-- <div class="tabs-container">
+                <button class="tab-button">DETAIL</button>
+                <button class="tab-button">AI REVIEW</button>
+                <button class="tab-button active">FEEDBACK</button>
+            </div> -->
+        </div>
+
+        <div class="content">
+            <div class="image-box">
+                <img src="https://via.placeholder.com/100" alt="Book Image">
+            </div>
+            <div class="input-boxes">
+                <input type="text" placeholder="Book Title" class="input-field">
+                <input type="text" placeholder="Author Name" class="input-field">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
