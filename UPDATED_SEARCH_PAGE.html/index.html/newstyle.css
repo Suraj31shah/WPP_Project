@@ -18,7 +18,7 @@ body {
 
 /* Header styles */
 header {
-    background: white;
+    background : #E0F7FA;   
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,13 +88,13 @@ nav {
 /* NEW *
 /
 /* Search Container */
-.search-container {
+/* .search-container {
     flex: 1;
     max-width: 32rem;
     margin: 0 2rem;
     position: relative;
 }
-
+/*
 .search-container input {
     width: 100%;
     padding: 0.75rem 1rem 0.75rem 3rem;
@@ -126,7 +126,7 @@ nav {
 
 .search-container svg:hover {
     color: #4f46e5;
-}
+} */
 
 
 
@@ -169,7 +169,8 @@ main {
 }
 
 .subscription-container {
-    max-width: 32rem;
+    max-width: 1000rem;
+    width: 45vw;
     margin: 0 auto;
     display: flex;
     gap: 0.5rem;
@@ -177,10 +178,21 @@ main {
 
 .subscription-container input {
     flex: 1;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
+    /* border: 1px solid #d1d5db; */
+    /* border-radius: 0.5rem 0 0 0.5rem; */
+    /* outline: none; */
+
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 3rem;
     border: 1px solid #d1d5db;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 1.5rem;
     outline: none;
+    transition: all 0.2s;
+    background: linear-gradient(135deg, #f0f4ff, #ffffff);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #374151;
 }
 
 .subscription-container input:focus {
@@ -193,7 +205,8 @@ main {
     color: white;
     border: none;
     padding: 0.5rem 1.5rem;
-    border-radius: 0 0.5rem 0.5rem 0;
+    /* border-radius: 0 0.5rem 0.5rem 0; */
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.2s;
 }
@@ -204,7 +217,7 @@ main {
 
 /* NEW  */
 /* Subscription styles */
-.subscription {
+/* .subscription {
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -249,7 +262,7 @@ main {
 
 .subscription-container button:hover {
     background: #4338ca;
-}
+} */
 
 
 /* Content layout */
@@ -295,6 +308,7 @@ main {
     width: 15vw;
     height: 100vh; /* Stretches the category box vertically */
     background: white;
+    background: #E0F7FA ; 
     padding: 1rem;
     border-radius: 0 1rem 1rem 0; /* Rounded corners only on the right */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -308,6 +322,7 @@ main {
 
 .categories h2 {
     font-size: 1.125rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     color: #1f2937;
 }
@@ -315,7 +330,7 @@ main {
 .category-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .category-list button {
@@ -327,6 +342,8 @@ main {
     color: #4b5563;
     cursor: pointer;
     transition: all 0.2s;
+    font-weight: 700 ;
+
 }
 
 .category-list button:hover {
@@ -456,6 +473,9 @@ main {
     align-items: center;
     gap: 0.5rem;
     background: #4f46e5;
+    /* background: rgb(223, 8, 8); */
+    /* background: rgb(42, 187, 0); */
+    background: #10b981;
     width: 10vw;
     color: white;
     border: none;
@@ -468,7 +488,9 @@ main {
 }
 
 .download-btn:hover {
-    background: #4338ca;
+    /* background: #4338ca; */
+    background: #388c70;
+
 }
 
 /* Responsive design */
